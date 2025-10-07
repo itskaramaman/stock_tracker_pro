@@ -22,7 +22,7 @@ const useTradingViewWidget = (
     script.innerHTML = JSON.stringify(config);
 
     containerRef.current.appendChild(script);
-    containerRef.current.dataset.loaded = true;
+    containerRef.current.dataset.loaded = "true";
 
     return () => {
       if (containerRef.current) {
